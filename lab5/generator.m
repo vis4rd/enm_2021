@@ -42,7 +42,7 @@ function [] = print_fn(k)
         gkv(i, :) = grid_k((i-1)*129+1 : i*129);
     end
     fig = figure;
-    surf(0:.2*k:25.6, 0:.2*k:25.6, gkv(1:k:end, 1:k:end)', 'FaceColor','texturemap')
+    surf(0:.2*k:25.6, 0:.2*k:25.6, gkv(1:k:end, 1:k:end)', 'FaceColor','texturemap');
     shading("flat");
     view(2);
     xlabel("x", "FontSize", 14)
